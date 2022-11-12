@@ -41,24 +41,3 @@ def get_sparql_dataframe(endpoint, query, user_agent=False, post=False):
     _csv = StringIO(results.decode('utf-8'))
     
     return pd.read_csv(_csv, sep=",")
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
