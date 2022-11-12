@@ -2,16 +2,13 @@
 Query a SPARQL endpoint and return results as a Pandas dataframe.
 """
 from io import StringIO
-
 import pandas as pd
-
 from SPARQLWrapper import SPARQLWrapper, CSV, SELECT, POST, POSTDIRECTLY
+
 
 
 class QueryException(Exception):
     pass
-
-
 
 """
 Wikidata has a specific User-Agent policy accessible at https://www.wikidata.org/wiki/Wikidata:Project_chat/Archive/2019/07#problems_with_query_API
